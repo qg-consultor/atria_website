@@ -367,6 +367,7 @@ button {
 .tagline {
     font-family: var(--fuente-secundaria);
     font-weight: 700; /* Bold styling */
+    font-style: italic;
     font-size: 60px; /* Incrementado */
     color: #FFFFFF;
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8), 4px 8px 20px rgba(0, 0, 0, 0.6), 0px 0px 30px rgba(0, 0, 0, 0.5);
@@ -1098,7 +1099,7 @@ button {
 
 .floating-tags {
     position: absolute;
-    bottom: 35px;
+    bottom: 42px;
     left: 30px;
     display: flex;
     gap: 10px;
@@ -1490,8 +1491,8 @@ button {
         #master-plan .mp-container { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; gap: 50px; max-width: 1600px; width: 100%; padding: 20px 4%; align-items: center; justify-content: space-between; margin: 0 auto; }
         /* PANEL IZQUIERDO Y TARJETAS */
         #master-plan .stats-panel { flex: 0 0 350px !important; display: flex; flex-direction: column; gap: 20px; z-index: 10; order: 1; text-align: left; }
-        #master-plan .stats-panel h2 { font-weight: 800; font-size: 2rem; margin-bottom: 10px; letter-spacing: -2px; text-transform: uppercase; }
-        #master-plan .stat-card { background: #C5B358; border: none; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        #master-plan .stats-panel h2 { font-weight: 800; font-size: 2rem; margin-bottom: 10px; letter-spacing: -2px; text-transform: uppercase; color: #C5B358; }
+        #master-plan .stat-card { background: #36454F; color: #FFFFFF; border: 1px solid #C5B358; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         #master-plan .stat-card:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(0, 130, 186, 0.4); }
         #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 5px; }
         #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #FFFFFF; }
@@ -1976,5 +1977,6 @@ button {
     fill: #D5DCCE;
     stroke: #D5DCCE;
     stroke-width: 2px;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.6));
 }
 
