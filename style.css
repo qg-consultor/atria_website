@@ -13,14 +13,14 @@
 :root {
     /* --- COLORES DEL TEMA PAMYRA --- */
     --color-fondo: #FFFFFF;
-    --color-texto-principal: #354E3C;
-    --color-texto-secundario: #D5DCCE;
-    --color-primario: #354E3C; 
-    --color-primario-hover: #0082BA; 
+    --color-texto-principal: #36454F;
+    --color-texto-secundario: #C5B358;
+    --color-primario: #36454F; 
+    --color-primario-hover: #C5B358; 
     
     /* --- COLORES DEL MAPA (Adaptados a Pamyra) --- */
-    --mapa-seleccionado: #354E3C;
-    --mapa-seleccionado: #354E3C;
+    --mapa-seleccionado: #36454F;
+    --mapa-seleccionado: #36454F;
 
     /* --- TIPOGRAFÍA --- */
     --fuente-principal: 'Montserrat', sans-serif;
@@ -368,8 +368,8 @@ button {
 .tagline {
     font-family: var(--fuente-secundaria);
     font-weight: 700; /* Bold styling */
-    font-size: 42px; /* Reducido a 42px */
-    color: #F8F3E8;
+    font-size: 50px; /* Incrementado */
+    color: #C5B358;
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8), 4px 8px 20px rgba(0, 0, 0, 0.6), 0px 0px 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -519,7 +519,7 @@ button {
         text-align: center !important;
     }
     .tagline {
-        font-size: 34px;
+        font-size: 42px;
         letter-spacing: 2px;
     }
     .btn-main-cta {
@@ -622,7 +622,7 @@ button {
         margin-bottom: 25px !important;
     }
     .tagline {
-        font-size: 28px;
+        font-size: 34px;
         letter-spacing: 2px;
         margin-bottom: 20px;
     }
