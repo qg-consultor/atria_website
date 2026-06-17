@@ -369,7 +369,7 @@ button {
     font-family: var(--fuente-secundaria);
     font-weight: 700; /* Bold styling */
     font-size: 60px; /* Incrementado */
-    color: #36454F;
+    color: #FFFFFF;
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8), 4px 8px 20px rgba(0, 0, 0, 0.6), 0px 0px 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
     letter-spacing: 2px;
