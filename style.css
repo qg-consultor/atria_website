@@ -385,7 +385,7 @@ button {
 
 .btn-main-cta {
     padding: 18px 50px; /* Wider button */
-    background: #36454F;
+    background: #C5B358;
     backdrop-filter: blur(4px);
     color: #FFFFFF;
     font-weight: 700;
@@ -398,7 +398,7 @@ button {
 
 .btn-main-cta:hover {
     transform: translateY(-5px);
-    background: #C5B358;
+    background: #36454F;
     color: #FFFFFF;
     box-shadow: 0 20px 45px rgba(0,0,0,0.3);
 }
@@ -1098,7 +1098,7 @@ button {
 
 .floating-tags {
     position: absolute;
-    bottom: 50px;
+    bottom: 35px;
     left: 30px;
     display: flex;
     gap: 10px;
