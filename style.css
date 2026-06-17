@@ -1517,10 +1517,10 @@ button {
         /* PANEL IZQUIERDO Y TARJETAS */
         #master-plan .stats-panel { flex: 0 0 350px !important; display: flex; flex-direction: column; gap: 20px; z-index: 10; order: 1; text-align: left; }
         #master-plan .stats-panel h2 { font-weight: 800; font-size: 2rem; margin-bottom: 10px; letter-spacing: -2px; text-transform: uppercase; color: #C5B358 !important; }
-        #master-plan .stat-card { background: #FFFFFF; border: 1px solid rgba(197, 179, 88, 0.5); border-left: 4px solid #C5B358; border-radius: 12px; padding: 25px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default; text-align: left; box-shadow: 0 15px 35px rgba(0,0,0,0.04); }
-        #master-plan .stat-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
-        #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #36454F; margin-bottom: 5px; }
-        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #36454F; }
+        #master-plan .stat-card { background: #36454F; border: 2px solid #C5B358; border-radius: 12px; padding: 25px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default; text-align: left; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+        #master-plan .stat-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 5px; }
+        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #FFFFFF; }
         /* MAPA COMPACTO HORIZONTAL A LA DERECHA CON SHADOW BUFFER GEOMÉTRICO PERFECTO */
         #master-plan .map-wrapper { flex: 1 1 auto !important; position: relative; display: flex; flex-direction: column; align-items: center; z-index: 1; padding-top: 0px; width: calc(100% - 400px); overflow: hidden; order: 2; }
         #master-plan .map-zoom-container { width: 100%; height: auto; position: relative; transition: transform 0.3s ease-out; transform-origin: center center; cursor: crosshair; }
