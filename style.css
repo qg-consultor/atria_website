@@ -196,21 +196,19 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #C5B358;
+    background: #36454F;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: var(--transition);
-}
-
-.hero-sidebar .social-icons a i {
-    font-size: 16px;
     color: #FFFFFF;
+    transition: var(--transition);
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .hero-sidebar .social-icons a:hover {
-    background: #36454F;
+    background: #C5B358;
 }
 .hero-sidebar .social-icons a:hover i {
     color: #FFFFFF;
@@ -387,7 +385,7 @@ button {
 
 .btn-main-cta {
     padding: 18px 50px; /* Wider button */
-    background: #C5B358;
+    background: #36454F;
     backdrop-filter: blur(4px);
     color: #FFFFFF;
     font-weight: 700;
@@ -400,7 +398,7 @@ button {
 
 .btn-main-cta:hover {
     transform: translateY(-5px);
-    background: #36454F;
+    background: #C5B358;
     color: #FFFFFF;
     box-shadow: 0 20px 45px rgba(0,0,0,0.3);
 }
