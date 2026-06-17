@@ -220,8 +220,8 @@ button {
     align-items: center;
     gap: 12px;
     padding: 10px 20px;
-    background: #FFFFFF;
-    color: #0A231D;
+    background: #C5B358;
+    color: #FFFFFF;
     font-weight: 700; /* Bolder as per reference */
     font-size: 14px;
     border-radius: 40px;
@@ -236,20 +236,20 @@ button {
     justify-content: center;
     align-items: center;
     transition: var(--transition);
-    color: #0A231D;
+    color: #FFFFFF;
 }
 
 .btn-appointment:hover {
     padding-right: 20px;
     padding-left: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    background: #C5B358;
-    color: #FFFFFF;
+    background: #FFFFFF;
+    color: #36454F;
 }
 
 .btn-appointment:hover .icon-arrow {
     transform: translateX(5px);
-    color: #FFFFFF;
+    color: #36454F;
 }
 
 /* ========================================================
@@ -368,8 +368,8 @@ button {
 .tagline {
     font-family: var(--fuente-secundaria);
     font-weight: 700; /* Bold styling */
-    font-size: 50px; /* Incrementado */
-    color: #C5B358;
+    font-size: 60px; /* Incrementado */
+    color: #36454F;
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8), 4px 8px 20px rgba(0, 0, 0, 0.6), 0px 0px 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -386,9 +386,9 @@ button {
 
 .btn-main-cta {
     padding: 18px 50px; /* Wider button */
-    background: #FFFFFF;
+    background: #C5B358;
     backdrop-filter: blur(4px);
-    color: #0A231D;
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 15px;
     border-radius: 50px;
@@ -399,8 +399,8 @@ button {
 
 .btn-main-cta:hover {
     transform: translateY(-5px);
-    background: #C5B358;
-    color: #FFFFFF;
+    background: #FFFFFF;
+    color: #36454F;
     box-shadow: 0 20px 45px rgba(0,0,0,0.3);
 }
 
@@ -1042,7 +1042,7 @@ button {
 }
 
 .btn-dark {
-    background: #C5B358;
+    background: #36454F;
     color: #FFFFFF;
     margin-top: 15px;
     display: flex;
@@ -1050,7 +1050,7 @@ button {
 }
 
 .btn-dark:hover {
-    background: #36454F;
+    background: #C5B358;
     color: #FFFFFF;
     box-shadow: 0 10px 20px rgba(28, 55, 117, 0.3);
 }
