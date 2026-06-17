@@ -66,7 +66,7 @@ body {
 h1, h2, h3, h4, h5, h6, 
 .proyecto-main-title, .prototipos-main-title, .ubicacion-title, .contacto-title, .fp-title, #lb-title {
     font-family: var(--fuente-secundaria) !important;
-    color: #1C3775 !important;
+    color: #36454F !important;
 }
 
 a {
@@ -171,7 +171,7 @@ button {
 }
 
 .hero-sidebar .nav-links a:hover {
-    background: #0082BA;
+    background: #C5B358;
     color: #FFFFFF;
     transform: translateX(6px);
 }
@@ -195,7 +195,7 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #0082BA;
+    background: #C5B358;
     border: none;
     display: flex;
     justify-content: center;
@@ -209,7 +209,7 @@ button {
 }
 
 .hero-sidebar .social-icons a:hover {
-    background: #1C3775;
+    background: #36454F;
 }
 .hero-sidebar .social-icons a:hover i {
     color: #FFFFFF;
@@ -243,7 +243,7 @@ button {
     padding-right: 20px;
     padding-left: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    background: #0082BA;
+    background: #C5B358;
     color: #FFFFFF;
 }
 
@@ -399,7 +399,7 @@ button {
 
 .btn-main-cta:hover {
     transform: translateY(-5px);
-    background: #0082BA;
+    background: #C5B358;
     color: #FFFFFF;
     box-shadow: 0 20px 45px rgba(0,0,0,0.3);
 }
@@ -913,7 +913,7 @@ button {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    background: #0082BA;
+    background: #C5B358;
     color: #F8F3E8; /* Icono de flecha en color crema claro */
     width: 50px;
     height: 50px;
@@ -938,7 +938,7 @@ button {
 }
 
 .back-to-top:hover {
-    background: #1C3775;
+    background: #36454F;
     transform: translateY(-5px);
 }
 
@@ -1000,7 +1000,7 @@ button {
     font-weight: 700; /* Cambiado a bold */
     font-size: 56px;
     letter-spacing: -1px; /* Tighter letter spacing like reference */
-    color: #1C3775 !important; /* Cambiado a #1C3775 */
+    color: #36454F !important; /* Cambiado a #36454F */
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: 10px;
@@ -1028,7 +1028,7 @@ button {
 .highlight-atria {
     font-family: var(--font-main) !important;
     font-weight: 700 !important;
-    color: #1C3775 !important;
+    color: #36454F !important;
 }
 
 .proyecto-sm-text .fw-light {
@@ -1042,7 +1042,7 @@ button {
 }
 
 .btn-dark {
-    background: #0082BA;
+    background: #C5B358;
     color: #FFFFFF;
     margin-top: 15px;
     display: flex;
@@ -1050,7 +1050,7 @@ button {
 }
 
 .btn-dark:hover {
-    background: #1C3775;
+    background: #36454F;
     color: #FFFFFF;
     box-shadow: 0 10px 20px rgba(28, 55, 117, 0.3);
 }
@@ -1135,7 +1135,7 @@ button {
 
 .proyecto-large-quote .text-accent {
     font-weight: 700;
-    color: #0082BA; /* Color acento para énfasis */
+    color: #C5B358; /* Color acento para énfasis */
 }
 
 /* Glass Slider Buttons */
@@ -1307,9 +1307,9 @@ button {
 }
 
 .btn-light-outline:hover {
-    background: #0082BA;
+    background: #C5B358;
     color: #FFFFFF;
-    border-color: #0082BA;
+    border-color: #C5B358;
 }
 
 .btn-light {
@@ -1329,7 +1329,7 @@ button {
 }
 
 .btn-light:hover {
-    background: #0082BA;
+    background: #C5B358;
     color: #FFFFFF;
 }
 
@@ -1349,7 +1349,7 @@ button {
 
 .btn-light:hover .icon-arrow {
     background: #FFFFFF;
-    color: #0082BA;
+    color: #C5B358;
 }
 
 /* Galería de Prototipos */
@@ -1491,7 +1491,7 @@ button {
         /* PANEL IZQUIERDO Y TARJETAS */
         #master-plan .stats-panel { flex: 0 0 350px !important; display: flex; flex-direction: column; gap: 20px; z-index: 10; order: 1; text-align: left; }
         #master-plan .stats-panel h2 { font-weight: 800; font-size: 2rem; margin-bottom: 10px; letter-spacing: -2px; text-transform: uppercase; }
-        #master-plan .stat-card { background: #0082BA; border: none; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        #master-plan .stat-card { background: #C5B358; border: none; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         #master-plan .stat-card:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(0, 130, 186, 0.4); }
         #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 5px; }
         #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #FFFFFF; }
@@ -1502,7 +1502,7 @@ button {
         #master-plan .base-map-img { width: 100%; height: auto; display: block; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); }
         #master-plan .interactive-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
         
-        #master-plan .map-instruction { position: relative; white-space: nowrap; background: #0082BA; border: none; color: #FFFFFF; padding: 12px 30px; border-radius: 30px; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; gap: 8px; animation: floatY 3s ease-in-out infinite; box-shadow: 0 10px 20px rgba(0, 130, 186, 0.3); }
+        #master-plan .map-instruction { position: relative; white-space: nowrap; background: #C5B358; border: none; color: #FFFFFF; padding: 12px 30px; border-radius: 30px; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; gap: 8px; animation: floatY 3s ease-in-out infinite; box-shadow: 0 10px 20px rgba(0, 130, 186, 0.3); }
         #master-plan .map-instruction span { font-size: 1.4rem; }
         @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
         /* MAGIA DEL MAPA */
@@ -1512,8 +1512,8 @@ button {
         #tooltip.visible { opacity: 1; transform: translateY(0); visibility: visible; }
         .tt-title { font-family: 'NeueMontreal-Bold', sans-serif; font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; color: var(--color-texto-secundario); text-transform: uppercase; letter-spacing: 1px; }
         .tt-desc { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem; color: #FFFFFF; margin-bottom: 20px; }
-        #tt-btn { display: inline-block; background: #0082BA !important; color: #FFFFFF !important; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
-        #tt-btn:hover { background: #FFFFFF !important; color: #0082BA !important; }
+        #tt-btn { display: inline-block; background: #C5B358 !important; color: #FFFFFF !important; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
+        #tt-btn:hover { background: #FFFFFF !important; color: #C5B358 !important; }
         .tt-close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #D5DCCE; font-size: 1.2rem; cursor: pointer; transition: color 0.2s ease; z-index: 10; padding: 5px; line-height: 1; }
         .tt-close-btn:hover { color: white; }
         .tt-logo-container { width: 100%; text-align: center; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -1526,10 +1526,10 @@ button {
         #master-plan .lote-disponible { fill: transparent !important; }
         
         /* HOVER: Celeste Atria y Stroke Blanco */
-        #master-plan .lote-disponible:hover { fill: #0082BA !important; opacity: 0.8 !important; stroke: #ffffff !important; stroke-width: 2px !important; }
+        #master-plan .lote-disponible:hover { fill: #C5B358 !important; opacity: 0.8 !important; stroke: #ffffff !important; stroke-width: 2px !important; }
         
         /* SELECCIONADO: Azul Marino y Stroke Blanco */
-        #master-plan .is-selected { fill: #1C3775 !important; opacity: 0.9 !important; stroke: #ffffff !important; stroke-width: 3px !important; }
+        #master-plan .is-selected { fill: #36454F !important; opacity: 0.9 !important; stroke: #ffffff !important; stroke-width: 3px !important; }
 
 @media (max-width: 1024px) {
   #master-plan .mp-container { display: flex !important; flex-direction: column !important; gap: 30px; padding: 10px; }
@@ -1911,7 +1911,7 @@ button {
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    background: #0082BA;
+    background: #C5B358;
     color: #FFFFFF;
     font-family: var(--font-secundario);
     font-weight: 700;
@@ -1929,7 +1929,7 @@ button {
 .btn-submit-glass:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     transform: translateY(-4px);
-    background: #1C3775;
+    background: #36454F;
     color: #FFFFFF;
 }
 
