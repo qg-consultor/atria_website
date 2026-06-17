@@ -196,7 +196,7 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #36454F;
+    background: #C5B358;
     border: none;
     display: flex;
     justify-content: center;
@@ -208,7 +208,7 @@ button {
 }
 
 .hero-sidebar .social-icons a:hover {
-    background: #C5B358;
+    background: #36454F;
 }
 .hero-sidebar .social-icons a:hover i {
     color: #FFFFFF;
@@ -999,7 +999,7 @@ button {
     font-weight: 700; /* Cambiado a bold */
     font-size: 56px;
     letter-spacing: -1px; /* Tighter letter spacing like reference */
-    color: #36454F !important; /* Cambiado a #36454F */
+    color: #C5B358 !important; /* Cambiado a #C5B358 */
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: 10px;
@@ -1098,7 +1098,7 @@ button {
 
 .floating-tags {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 30px;
     display: flex;
     gap: 10px;
