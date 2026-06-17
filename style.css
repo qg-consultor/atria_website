@@ -1159,9 +1159,9 @@ button {
     letter-spacing: -0.5px;
 }
 
-.proyecto-large-quote .text-accent {
+.text-accent {
     font-weight: 700;
-    color: #C5B358; /* Color acento para énfasis */
+    color: #C5B358 !important; /* Color acento para énfasis */
 }
 
 /* Glass Slider Buttons */
