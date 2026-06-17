@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Chapaza';
+    src: url('FUENTES/Chapaza%20Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* ========================================================
    CSS Variables & Resets
    ======================================================== */
@@ -1492,7 +1499,7 @@ button {
         /* PANEL IZQUIERDO Y TARJETAS */
         #master-plan .stats-panel { flex: 0 0 350px !important; display: flex; flex-direction: column; gap: 20px; z-index: 10; order: 1; text-align: left; }
         #master-plan .stats-panel h2 { font-weight: 800; font-size: 2rem; margin-bottom: 10px; letter-spacing: -2px; text-transform: uppercase; color: #C5B358 !important; }
-        #master-plan .stat-card { background: rgba(54, 69, 79, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 2px solid #C5B358; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        #master-plan .stat-card { background: rgba(30, 35, 45, 0.65); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-top: 1px solid rgba(255, 255, 255, 0.25); border-left: 1px solid rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.03), 0 8px 32px rgba(0, 0, 0, 0.6); }
         #master-plan .stat-card:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); }
         #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 5px; }
         #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #FFFFFF; }
