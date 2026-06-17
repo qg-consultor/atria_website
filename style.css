@@ -1090,6 +1090,7 @@ button {
     height: 100%;
     border: none;
     pointer-events: none;
+    transform: scale(1.02); /* Slight scale to hide sub-pixel black borders */
     transition: transform 0.8s ease;
 }
 
