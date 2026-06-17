@@ -400,8 +400,8 @@ button {
 
 .btn-main-cta:hover {
     transform: translateY(-5px);
-    background: #FFFFFF;
-    color: #36454F;
+    background: #36454F;
+    color: #FFFFFF;
     box-shadow: 0 20px 45px rgba(0,0,0,0.3);
 }
 
