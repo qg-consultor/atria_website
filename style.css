@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-    font-family: 'NeueMontreal-Bold';
-    src: url('FUENTES/NeueMontreal-Bold.otf') format('opentype');
-    font-weight: bold;
+    font-family: 'Chapaza';
+    src: url('FUENTES/Chapaza.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -24,7 +24,7 @@
 
     /* --- TIPOGRAFÍA --- */
     --fuente-principal: 'Montserrat', sans-serif;
-    --fuente-secundaria: 'NeueMontreal-Bold', sans-serif;
+    --fuente-secundaria: 'Chapaza', sans-serif;
 
     /* --- RETROCOMPATIBILIDAD CON ALIAS ANTERIORES PARA EVITAR QUE SE ROMPA EL SITIO --- */
     --color-secundario: var(--color-texto-secundario);
@@ -91,7 +91,7 @@ button {
     min-height: 800px;
     overflow: hidden;
     /* The ripples library will use this background image */
-    background-image: url('https://res.cloudinary.com/dwkgoevjn/video/upload/so_0/v1779731390/Saggita_Residencial_Timelapse_jm6k77.jpg');
+    background-image: none; /* TODO: Insertar URL de Cloudflare */
     background-size: cover;
     background-position: center bottom;
     /* Removido background-attachment: fixed; para evitar que la imagen se vea "muy extendida" en ciertas pantallas */
@@ -1025,7 +1025,7 @@ button {
     font-weight: 700;
 }
 
-.highlight-saggita {
+.highlight-atria {
     font-family: var(--font-main) !important;
     font-weight: 700 !important;
     color: #1C3775 !important;
@@ -1525,7 +1525,7 @@ button {
         #master-plan .lote-vendido { fill: rgba(0,0,0,0.5) !important; opacity: 0.8 !important; }
         #master-plan .lote-disponible { fill: transparent !important; }
         
-        /* HOVER: Celeste Saggita y Stroke Blanco */
+        /* HOVER: Celeste Atria y Stroke Blanco */
         #master-plan .lote-disponible:hover { fill: #0082BA !important; opacity: 0.8 !important; stroke: #ffffff !important; stroke-width: 2px !important; }
         
         /* SELECCIONADO: Azul Marino y Stroke Blanco */
