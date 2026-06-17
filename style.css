@@ -1100,7 +1100,7 @@ button {
 .floating-tags {
     position: absolute;
     bottom: 42px;
-    left: 30px;
+    left: 10px;
     display: flex;
     gap: 10px;
     z-index: 10;
@@ -1492,10 +1492,10 @@ button {
         /* PANEL IZQUIERDO Y TARJETAS */
         #master-plan .stats-panel { flex: 0 0 350px !important; display: flex; flex-direction: column; gap: 20px; z-index: 10; order: 1; text-align: left; }
         #master-plan .stats-panel h2 { font-weight: 800; font-size: 2rem; margin-bottom: 10px; letter-spacing: -2px; text-transform: uppercase; color: #C5B358 !important; }
-        #master-plan .stat-card { background: #FFFFFF; border: 3px solid #C5B358; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        #master-plan .stat-card { background: rgba(54, 69, 79, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 2px solid #C5B358; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         #master-plan .stat-card:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); }
-        #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #36454F; margin-bottom: 5px; }
-        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #36454F; }
+        #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 5px; }
+        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #FFFFFF; }
         /* MAPA COMPACTO HORIZONTAL A LA DERECHA CON SHADOW BUFFER GEOMÉTRICO PERFECTO */
         #master-plan .map-wrapper { flex: 1 1 auto !important; position: relative; display: flex; flex-direction: column; align-items: center; z-index: 1; padding-top: 0px; width: calc(100% - 400px); overflow: hidden; order: 2; }
         #master-plan .map-zoom-container { width: 100%; height: auto; position: relative; transition: transform 0.3s ease-out; transform-origin: center center; cursor: crosshair; }
