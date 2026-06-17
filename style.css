@@ -372,7 +372,7 @@ button {
     color: #F8F3E8;
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8), 4px 8px 20px rgba(0, 0, 0, 0.6), 0px 0px 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-    letter-spacing: -0.5px;
+    letter-spacing: 2px;
     pointer-events: auto; /* Reactivar clic */
 }
 
@@ -520,7 +520,7 @@ button {
     }
     .tagline {
         font-size: 34px;
-        letter-spacing: -0.5px;
+        letter-spacing: 2px;
     }
     .btn-main-cta {
         padding: 14px 35px;
@@ -623,7 +623,7 @@ button {
     }
     .tagline {
         font-size: 28px;
-        letter-spacing: -0.5px;
+        letter-spacing: 2px;
         margin-bottom: 20px;
     }
     .main-cta-container {
