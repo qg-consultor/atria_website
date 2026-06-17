@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6,
 .proyecto-main-title, .prototipos-main-title, .ubicacion-title, .contacto-title, .fp-title, #lb-title {
     font-family: var(--fuente-secundaria) !important;
     color: #36454F !important;
+    letter-spacing: 2px !important;
 }
 
 a {
