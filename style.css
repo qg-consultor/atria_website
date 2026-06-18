@@ -2033,3 +2033,30 @@ button {
     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.6));
 }
 
+
+/* Reordenamiento Master Plan Mobile (Sobrescritura Final) */
+@media (max-width: 768px) {
+    #master-plan {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    #master-plan .mp-container {
+        display: contents !important;
+    }
+    #master-plan .stats-panel {
+        order: 1 !important;
+        width: 100% !important;
+    }
+    #master-plan .mp-header-instruction {
+        order: 2 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 45px !important;
+        position: static !important;
+    }
+    #master-plan .map-wrapper {
+        order: 3 !important;
+    }
+}
