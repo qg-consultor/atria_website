@@ -827,14 +827,14 @@ button {
     }
     /* Contacto Mobile */
     .contacto-section {
-        padding: 40px 5% !important;
+        padding: 40px 6% !important;
     }
     .contacto-container {
         grid-template-columns: 1fr;
         gap: 40px;
     }
     .contacto-title {
-        font-size: 36px;
+        font-size: clamp(28px, 8vw, 36px) !important;
     }
     .contacto-desc {
         font-size: 15px;
@@ -1799,7 +1799,7 @@ button {
    ======================================================== */
 .contacto-section {
     position: relative;
-    width: 100vw;
+    width: 100%;
     padding: 70px 5%;
     background-image: url('SECCIONES/UBICACION/IMAGENES/Atria_Distrito_Centro_Queretaro.webp');
     background-size: cover;
