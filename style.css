@@ -782,7 +782,7 @@ button {
     }
     /* Prototipos Mobile */
     .prototipos-section {
-        padding: 30px 4%;
+        padding: 40px 4% 0px 4% !important; /* Bottom padding reducido a 0 para acercarlo a la sig sección */
     }
     .prototipos-header {
         flex-direction: column;
