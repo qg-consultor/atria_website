@@ -808,8 +808,11 @@ button {
     .ubicacion-content {
         grid-template-columns: 1fr !important;
     }
-    .place-row, .place-row.reverse {
+    .place-row {
         flex-direction: column !important;
+    }
+    .place-row.reverse {
+        flex-direction: column-reverse !important;
     }
     .place-img-wrapper {
         width: 100% !important;
@@ -824,7 +827,7 @@ button {
     }
     /* Contacto Mobile */
     .contacto-section {
-        padding: 40px 5%;
+        padding: 40px 5% !important;
     }
     .contacto-container {
         grid-template-columns: 1fr;
