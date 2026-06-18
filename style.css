@@ -1940,7 +1940,7 @@ button {
     gap: 15px;
     background: #C5B358;
     color: #FFFFFF;
-    font-family: var(--font-secundario);
+    font-family: var(--font-main);
     font-weight: 700;
     font-size: 15px;
     padding: 14px 35px;
