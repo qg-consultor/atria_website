@@ -839,6 +839,10 @@ button {
     .contacto-desc {
         font-size: 15px;
     }
+    .c-tag {
+        padding: 8px 14px !important;
+        font-size: 13px !important;
+    }
     .contacto-form-glass {
         padding: 30px 25px;
     }
