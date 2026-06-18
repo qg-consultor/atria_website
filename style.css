@@ -1040,13 +1040,13 @@ button {
     font-weight: 400; /* Regular */
     font-size: 20px; /* Aumentado tamaño de fuente */
     line-height: 1.6;
-    color: #354E3C; /* Modificado color principal */
+    color: #1c1c1c; /* Modificado color principal a negro carbon */
     max-width: 95%;
     margin-bottom: 10px;
 }
 
 .proyecto-sm-text strong {
-    color: #354E3C;
+    color: #1c1c1c;
     font-weight: 700;
 }
 
