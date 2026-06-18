@@ -1738,6 +1738,7 @@ button {
     color: #354E3C;
     margin-bottom: 2px;
     line-height: 1.2;
+    letter-spacing: -1px;
 }
 
 .place-text p {
@@ -1745,6 +1746,7 @@ button {
     font-weight: 800;
     font-size: 18px;
     color: #666666;
+    letter-spacing: -1px;
 }
 
 .right-align .place-text {
