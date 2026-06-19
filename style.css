@@ -1,35 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Montserrat: cargada desde HTML (preload). No duplicar con @import */
 
+/* Chapaza - fuente personalizada (2 variantes: normal e italic) */
 @font-face {
     font-family: 'Chapaza';
     src: url('FUENTES/Chapaza.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400 800;
     font-style: normal;
-}
-@font-face {
-    font-family: 'Chapaza';
-    src: url('FUENTES/Chapaza.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Chapaza';
-    src: url('FUENTES/Chapaza.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Chapaza';
-    src: url('FUENTES/Chapaza.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Chapaza';
     src: url('FUENTES/Chapaza%20Italic.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
+    font-display: swap;
 }
 
 /* ========================================================
