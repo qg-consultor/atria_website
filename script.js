@@ -336,34 +336,35 @@ document.addEventListener('DOMContentLoaded', () => {
     'LOTE-211': { const: '181.10', terr: '141.40', status: 'Disponible' }
 };
 
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const shapes = document.querySelectorAll('.lote-interactivo');
-                shapes.forEach(shape => {
-                    const id = shape.id;
-                    if (id) {
-                        const data = LOT_DATA[id] || { const: '181.10', terr: '141.40', status: 'Disponible' };
-                        let loteName = id;
-                        if(id.includes('-M')) {
-                            const parts = id.split('-M');
-                            const mzStr = parts[0].replace('SAG', '');
-                            const loteStr = parts[1];
-                            loteName = 'MZ' + mzStr + ' LOTE ' + loteStr;
-                        }
-                        shape.setAttribute('data-title', loteName);
-                        shape.setAttribute('data-const', data.const);
-                        shape.setAttribute('data-terr', data.terr);
-                        shape.setAttribute('data-status', data.status);
-                        
-                        if (data.status.toLowerCase() === 'disponible') {
-                            shape.classList.add('lote-disponible', 'lote-activo');
-                        } else {
-                            shape.classList.add('lote-vendido', 'lote-activo'); 
-                        }
+        // Con defer, el DOM ya está listo al ejecutarse este script.
+        // No necesitamos window.load (que esperaría imágenes/iframes pesados).
+        // Inicializamos los lotes directamente.
+        (function initLotes() {
+            const shapes = document.querySelectorAll('.lote-interactivo');
+            shapes.forEach(shape => {
+                const id = shape.id;
+                if (id) {
+                    const data = LOT_DATA[id] || { const: '181.10', terr: '141.40', status: 'Disponible' };
+                    let loteName = id;
+                    if(id.includes('-M')) {
+                        const parts = id.split('-M');
+                        const mzStr = parts[0].replace('SAG', '');
+                        const loteStr = parts[1];
+                        loteName = 'MZ' + mzStr + ' LOTE ' + loteStr;
                     }
-                });
-            }, 1000); 
-        });
+                    shape.setAttribute('data-title', loteName);
+                    shape.setAttribute('data-const', data.const);
+                    shape.setAttribute('data-terr', data.terr);
+                    shape.setAttribute('data-status', data.status);
+
+                    if (data.status.toLowerCase() === 'disponible') {
+                        shape.classList.add('lote-disponible', 'lote-activo');
+                    } else {
+                        shape.classList.add('lote-vendido', 'lote-activo');
+                    }
+                }
+            });
+        })();
 
         document.addEventListener('click', (e) => {
             const lote = e.target.closest('.lote-activo');
