@@ -26,19 +26,10 @@ $(document).ready(function() {
     */
 
     // 2. Interactive Hotspots (Click to toggle tooltips)
-    // Requirements: "When clicked open a small floating tooltip describing property features."
     $('.hotspot').on('click', function(e) {
-        // Prevent click from propagating to the hero background if we don't want ripples exactly where clicked,
-        // but let's allow it so user sees a ripple under the click!
-        
         const $this = $(this);
-        
-        // Toggle active class on this hotspot
         $this.toggleClass('active');
-        
-        // Remove active class from all other hotspots to close their tooltips
         $('.hotspot').not($this).removeClass('active');
-        
         e.stopPropagation();
     });
 
@@ -47,11 +38,9 @@ $(document).ready(function() {
         $('.hotspot').removeClass('active');
     });
 
-    // Herramienta temporal de coordenadas eliminada a petición.
     // 3. Prevent ripples from intercepting standard button clicks
     $('button, a').on('mouseenter', function() {
-        // Optional: stop ripples when hovering over buttons to keep it clean,
-        // or just let it be. We will let it be.
+        // Optional
     });
 
     // 4. Lógica del Carrusel de la Galería "Proyecto"
@@ -60,7 +49,7 @@ $(document).ready(function() {
     const gallery = document.getElementById('gallery-carousel');
 
     if (nextBtn && prevBtn && gallery) {
-        const scrollAmount = 370; // Ancho de tarjeta (350) + gap (20)
+        const scrollAmount = 370;
 
         nextBtn.addEventListener('click', () => {
             gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
@@ -75,7 +64,7 @@ $(document).ready(function() {
     const backToTopBtn = document.getElementById('back-to-top');
     
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 300) { // Mostrar si baja más de 300px
+        if ($(this).scrollTop() > 300) {
             $(backToTopBtn).addClass('visible');
         } else {
             $(backToTopBtn).removeClass('visible');
@@ -109,7 +98,7 @@ $(document).ready(function() {
     if (fpNextBtn && fpPrevBtn && fpGallery) {
         fpNextBtn.addEventListener('click', () => {
              const cardWidth = fpGallery.querySelector('.fp-card').offsetWidth;
-             const gap = 30; // gap from CSS
+             const gap = 30;
              fpGallery.scrollBy({ left: cardWidth + gap, behavior: 'smooth' });
         });
 
@@ -507,202 +496,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
-        // Clic fuera de la imagen también cierra (cuidado con los botones de flecha)
-        lightbox.addEventListener('click', (e) => {
-            if(e.target === lightbox || e.target.classList.contains('fp-lightbox-content')) {
-                lightbox.classList.remove('visible');
-                document.body.style.overflow = 'auto';
-            }
-        });
-    }
-
-    // =========================================================
-    // Interactive Zoom Explorer for Floorplan Images
-    // =========================================================
-    document.querySelectorAll('.zoom-explore').forEach(container => {
-        const img = container.querySelector('img');
-        
-        container.addEventListener('mousemove', (e) => {
-            const rect = container.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-            img.style.transformOrigin = x + '% ' + y + '%';
-        });
-        
-        container.addEventListener('mouseleave', () => {
-    'LOTE-202': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-203': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-204': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-205': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-206': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-207': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-208': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-209': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-210': { const: '181.10', terr: '141.40', status: 'Disponible' },
-    'LOTE-211': { const: '181.10', terr: '141.40', status: 'Disponible' }
-};
-
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const shapes = document.querySelectorAll('.lote-interactivo');
-                shapes.forEach(shape => {
-                    const id = shape.id;
-                    if (id) {
-                        const data = LOT_DATA[id] || { const: '181.10', terr: '141.40', status: 'Disponible' };
-                        let loteName = id;
-                        if(id.includes('-M')) {
-                            const parts = id.split('-M');
-                            const mzStr = parts[0].replace('SAG', '');
-                            const loteStr = parts[1];
-                            loteName = 'MZ' + mzStr + ' LOTE ' + loteStr;
-                        }
-                        shape.setAttribute('data-title', loteName);
-                        shape.setAttribute('data-const', data.const);
-                        shape.setAttribute('data-terr', data.terr);
-                        shape.setAttribute('data-status', data.status);
-                        
-                        if (data.status.toLowerCase() === 'disponible') {
-                            shape.classList.add('lote-disponible', 'lote-activo');
-                        } else {
-                            shape.classList.add('lote-vendido', 'lote-activo'); 
-                        }
-                    }
-                });
-            }, 1000); 
-        });
-
-        document.addEventListener('click', (e) => {
-            const lote = e.target.closest('.lote-activo');
-            document.querySelectorAll('.is-selected').forEach(el => el.classList.remove('is-selected'));
-            
-            if(lote) {
-                e.stopPropagation(); 
-                lote.classList.add('is-selected');
-
-                const titulo = lote.getAttribute('data-title');
-                const constr = lote.getAttribute('data-const');
-                const terr = lote.getAttribute('data-terr');
-                const status = lote.getAttribute('data-status');
-
-                ttTitle.textContent = titulo;
-                ttDesc.innerHTML = `Construcción: ${constr} m²<br>Terreno: ${terr} m²<br>Status: ${status}`;
-                
-                if (status && status.toLowerCase() !== 'disponible') {
-                    ttBtn.style.display = 'none';
-                } else {
-                    ttBtn.style.display = 'inline-block';
-                }
-                
-                tooltip.style.left = (e.pageX + 15) + 'px';
-                tooltip.style.top = (e.pageY + 15) + 'px';
-                tooltip.classList.add('visible');
-            } else if (!e.target.closest('#tooltip')) {
-                tooltip.classList.remove('visible');
-            }
-        });
-
-        ttBtn.addEventListener('click', () => {
-            alert("¡Llevando al cliente al formulario de contacto!");
-        });
-
-        if (ttClose) {
-            ttClose.addEventListener('click', (e) => {
-                e.stopPropagation();
-                tooltip.classList.remove('visible');
-                document.querySelectorAll('.is-selected').forEach(el => el.classList.remove('is-selected'));
-            });
-        }
-        
-        /* LÓGICA DE ZOOM INTERACTIVO */
-        const mapWrapper = document.getElementById('map-wrapper');
-        const zoomContainer = document.getElementById('map-zoom-container');
-
-        if (mapWrapper && zoomContainer) {
-            mapWrapper.addEventListener('mousemove', (e) => {
-                const rect = mapWrapper.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-
-                const xPercent = (x / rect.width) * 100;
-                const yPercent = (y / rect.height) * 100;
-
-                zoomContainer.style.transformOrigin = `${xPercent}% ${yPercent}%`;
-                zoomContainer.style.transform = 'scale(2.5)';
-            });
-
-            mapWrapper.addEventListener('mouseleave', () => {
-                zoomContainer.style.transform = 'scale(1)';
-                zoomContainer.style.transformOrigin = 'center center';
-            });
-        }
-    
-});
-
-
-/* =========================================
-   LIGHTBOX GALERIA PLANOS
-========================================= */
-document.addEventListener('DOMContentLoaded', () => {
-    const fpCards = document.querySelectorAll('.fp-card');
-    const lightbox = document.getElementById('fp-lightbox');
-    const lbImg = document.getElementById('lb-img');
-    const lbTitle = document.getElementById('lb-title');
-    const lbClose = document.getElementById('fp-close');
-    const lbPrev = document.getElementById('lb-btn-prev');
-    const lbNext = document.getElementById('lb-btn-next');
-
-    if (lightbox && fpCards.length > 0) {
-        const fpData = [
-            { title: 'CASA <span class="text-green">TIPO 1</span>', src: 'IMAGENES/lasierra_residencial_casatipo1.png' },
-            { title: 'CASA <span class="text-green">TIPO 2</span>', src: 'IMAGENES/lasierra_residencial_casatipo2.png' },
-            { title: 'CASA <span class="text-green">TIPO 3</span>', src: 'IMAGENES/lasierra_residencial_casatipo3.png' },
-            { title: 'CASA <span class="text-green">TIPO 4</span>', src: 'IMAGENES/lasierra_residencial_casatipo4.jpg' },
-            { title: 'DEPA <span class="text-green">TIPO 1</span>', src: 'IMAGENES/lasierra_residencial_depatipo1.png' },
-            { title: 'DEPA <span class="text-green">TIPO 2</span>', src: 'IMAGENES/lasierra_residencial_depatipo2.png' },
-            { title: 'DEPA <span class="text-green">TIPO 3</span>', src: 'IMAGENES/lasierra_residencial_depatipo3.png' }
-        ];
-
-        let currentLbIndex = 0;
-
-        function openLightbox(index) {
-            currentLbIndex = index;
-            lbImg.src = fpData[index].src;
-            lbTitle.innerHTML = fpData[index].title;
-            lightbox.classList.add('visible');
-            document.body.style.overflow = 'hidden';
-        }
-
-        fpCards.forEach((card) => {
-            card.addEventListener('click', () => {
-                const idx = parseInt(card.getAttribute('data-index'), 10);
-                if (!isNaN(idx)) openLightbox(idx);
-            });
-        });
-
-        if (lbClose) {
-            lbClose.addEventListener('click', () => {
-                lightbox.classList.remove('visible');
-                document.body.style.overflow = 'auto';
-            });
-        }
-
-        if (lbPrev) {
-            lbPrev.addEventListener('click', (e) => {
-                e.stopPropagation();
-                currentLbIndex = (currentLbIndex > 0) ? currentLbIndex - 1 : fpData.length - 1;
-                openLightbox(currentLbIndex);
-            });
-        }
-
-        if (lbNext) {
-            lbNext.addEventListener('click', (e) => {
-                e.stopPropagation();
-                currentLbIndex = (currentLbIndex < fpData.length - 1) ? currentLbIndex + 1 : 0;
-                openLightbox(currentLbIndex);
-            });
-        }
-        
-        // Clic fuera de la imagen también cierra (cuidado con los botones de flecha)
+        // Clic fuera de la imagen también cierra
         lightbox.addEventListener('click', (e) => {
             if(e.target === lightbox || e.target.classList.contains('fp-lightbox-content')) {
                 lightbox.classList.remove('visible');
